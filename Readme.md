@@ -39,3 +39,8 @@ El proyecto **"curso-react-native"** tiene como objetivo principal proporcionar 
 Las contribuciones al proyecto son bienvenidas. Si deseas contribuir, por favor, abre un issue o envía un pull request con tus cambios.
 
 ---
+
+## IMG
+
+  ![pruebasreactNative](https://github.com/user-attachments/assets/1d6bf144-8293-46be-ba9c-87ab4243deda)
+
