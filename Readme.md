@@ -1,4 +1,3 @@
-# Curso React Native
 
 ## Propósito del Proyecto
 
