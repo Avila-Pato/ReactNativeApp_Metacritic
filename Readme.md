@@ -39,5 +39,3 @@ El proyecto **"curso-react-native"** tiene como objetivo principal proporcionar 
 Las contribuciones al proyecto son bienvenidas. Si deseas contribuir, por favor, abre un issue o envía un pull request con tus cambios.
 
 ---
-
-Este README proporciona una visión general del propósito del proyecto y de cómo se configura y ejecuta. Ajusta o amplía la información según sea necesario para reflejar los detalles específicos de tu proyecto.
