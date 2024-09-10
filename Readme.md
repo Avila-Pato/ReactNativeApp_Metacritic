@@ -13,7 +13,7 @@ El proyecto **"curso-react-native"** tiene como objetivo principal proporcionar 
   - **Express**: Framework para crear el servidor backend.
   - **Fetch**: Para realizar solicitudes HTTP desde el servidor.
   - **CORS**: Middleware para gestionar los permisos de origen cruzado en el servidor.
-  - **Axios**: Aunque no se usa en la versión final del proyecto, se menciona como una dependencia común para realizar solicitudes HTTP.
+
 
 ### Estructura del Proyecto
 
