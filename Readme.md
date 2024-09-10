@@ -1,7 +1,7 @@
 
 ## Propósito del Proyecto
 
-El proyecto **"curso-react-native"** tiene como objetivo principal proporcionar una base sólida para el desarrollo de aplicaciones móviles utilizando React Native y Expo. Este proyecto es una introducción práctica a la creación de aplicaciones móviles, con un enfoque en la integración de datos externos y la configuración de un entorno de desarrollo completo.
+El proyecto  tiene como objetivo principal proporcionar una base sólida para el desarrollo de aplicaciones móviles utilizando React Native y Expo. Este proyecto es una introducción práctica a la creación de aplicaciones móviles, con un enfoque en la integración de datos externos y la configuración de un entorno de desarrollo completo.
 
 ### Descripción del Proyecto
 
