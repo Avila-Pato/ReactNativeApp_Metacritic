@@ -1,45 +1,25 @@
+/* eslint-disable prettier/prettier */
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
-import { getLatestGames } from './lib/metacritic';
+import { StyleSheet,View, } from 'react-native';
+import {Main} from "./components/Main"
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 
+
+// Renderizar providers y se use como un componente para separarlo
+// en contexto un provider se refiere a un componente por ejemplo safeareaprovider que envuelve una parte de la
+// app y proporciona un valor o funcionalidad a todos los componentes dentro de su arbol
 export default function App() {
-  const [games, setGames] = useState([]);
 
-  useEffect(() => {
-    async function fetchGames() {
-      try {
-        const data = await getLatestGames();
-        setGames(data);
-      } catch (error) {
-        console.error('Error fetching games:', error);
-      }
-    }
-    fetchGames();
-  }, []);
-
+// SafeAreaProvider asegura que el contenido se ajuste dentro de las areas seguras de un dispositivo movil 
   return (
+    <SafeAreaProvider>
     <View style={styles.container}>
       <StatusBar style='light' />
-     <ScrollView contentContainerStyle={styles.ScrollView} >
-      
-      {games.map((game) => (
-        <View key={game.slug} style={styles.card}>
-          <Image 
-            source={{ uri: game.image }} 
-            style={{
-              width: 107,
-              height: 147,
-              borderRadius: 10,
-            }}
-            />
-          <Text style={styles.gameTitle}>{game.title}</Text>
-        </View>
-      ))}
-      </ScrollView>
+      <Main />
     </View>
+    </SafeAreaProvider>
   );
 }
 
@@ -49,16 +29,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  card: {
-    margin: 10,
-    padding: 10,
-    backgroundColor: '#333',
-    borderRadius: 10,
-    alignItems: 'center',
-  },
-  gameTitle: {
-    color: '#fff',
-    marginTop: 5,
-  },
+    paddingHorizontal: 12,
+  
+  }
+
 });
