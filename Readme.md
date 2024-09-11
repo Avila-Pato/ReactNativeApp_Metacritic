@@ -31,7 +31,7 @@ El proyecto se compone de dos partes principales:
 
 ## Estructura del Proyecto
 
-- **`expo/AppEntry.js`**: Punto de entrada para la aplicación Expo.
+- **`App.js`**: Punto de entrada para la aplicación Expo.
 - **`server.js`**: Configura y ejecuta el servidor Express.
 - **`lib/metacritic.js`**: Contiene funciones para obtener datos de la API de Metacritic.
 
