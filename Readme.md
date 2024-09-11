@@ -43,4 +43,8 @@ Las contribuciones al proyecto son bienvenidas. Si deseas contribuir, por favor,
 ## IMG
 
   ![pruebasreactNative](https://github.com/user-attachments/assets/1d6bf144-8293-46be-ba9c-87ab4243deda)
+## Avances
+
+  
+![avances](https://github.com/user-attachments/assets/340f70c2-e1ab-40aa-96fa-43da10affb30)
 
