@@ -40,7 +40,7 @@ El proyecto se compone de dos partes principales:
 ### Backend
 
 1. Navega al directorio del servidor.
-2. Ejecuta `node server.js` para iniciar el servidor Express.
+2. Ejecuta `node --watch server.js` para iniciar el servidor Express.
 
 ### Frontend
 
