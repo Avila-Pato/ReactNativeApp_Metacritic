@@ -1,44 +1,69 @@
 
 ## Propósito del Proyecto
 
-El proyecto  tiene como objetivo principal proporcionar una base sólida para el desarrollo de aplicaciones móviles utilizando React Native y Expo. Este proyecto es una introducción práctica a la creación de aplicaciones móviles, con un enfoque en la integración de datos externos y la configuración de un entorno de desarrollo completo.
+El propósito principal de este proyecto es proporcionar una base sólida para el desarrollo de aplicaciones móviles utilizando **React Native** y **Expo**. Este proyecto sirve como una introducción práctica a la creación de aplicaciones móviles, con un enfoque en:
 
-### Descripción del Proyecto
+- **Integración de datos externos:** Utilizando una API para obtener y mostrar información en la aplicación.
+- **Configuración de un entorno de desarrollo completo:** Para facilitar el desarrollo, prueba y despliegue de aplicaciones móviles.
 
-- **Frontend:** Utiliza React Native para crear una interfaz de usuario que muestra una lista de juegos obtenidos a través de una API externa.
-- **Backend:** Implementa un servidor Express que se encarga de realizar solicitudes a la API de Metacritic para obtener datos sobre juegos, gestionando CORS y proporcionando una capa intermedia entre el frontend y la API.
-- **Dependencias Clave:**
-  - **React Native**: Biblioteca principal para el desarrollo de la interfaz móvil.
-  - **Expo**: Herramienta para el desarrollo y prueba de aplicaciones React Native.
-  - **Express**: Framework para crear el servidor backend.
-  - **Fetch**: Para realizar solicitudes HTTP desde el servidor.
-  - **CORS**: Middleware para gestionar los permisos de origen cruzado en el servidor.
+## Descripción del Proyecto
 
+El proyecto se compone de dos partes principales:
 
-### Estructura del Proyecto
+- **Frontend:** Desarrollado con **React Native**, muestra una interfaz de usuario interactiva que presenta una lista de juegos. Los datos sobre los juegos se obtienen a través de una API externa, proporcionando una experiencia actualizada y dinámica para el usuario.
+
+- **Backend:** Implementado con **Express**, actúa como intermediario entre el frontend y la API de Metacritic. El servidor Express realiza solicitudes a la API, maneja los permisos de origen cruzado (CORS) y proporciona los datos necesarios al frontend.
+
+## Componentes Principales
+
+### `GameCard.js`
+
+- **`GameCard`**: Muestra la información de un juego, incluyendo la imagen, título, descripción y puntuación.
+- **`AnimatedCard`**: Añade una animación de opacidad a `GameCard` para mejorar la presentación visual.
+
+### `Main.js`
+
+- **`Main`**: Componente principal que utiliza `FlatList` para mostrar una lista de juegos obtenidos de la API. Incluye un indicador de carga (`LoadingOverlay`) y un logo (`Logo`).
+
+### `LoadingOverlay.js`
+
+- **`LoadingOverlay`**: Muestra un indicador de carga centrado en la pantalla mientras se obtienen datos sobre los juegos.
+
+## Estructura del Proyecto
 
 - **`expo/AppEntry.js`**: Punto de entrada para la aplicación Expo.
-- **`server.js`**: Archivo que configura y ejecuta el servidor Express.
-- **`lib/metacritic.js`**: Archivo que contiene funciones para obtener datos de Metacritic.
-- **Dependencias y DevDependencies**: Incluye las bibliotecas necesarias para el desarrollo y la ejecución del proyecto, como `react`, `react-native`, `expo`, `eslint`, y otras herramientas de desarrollo.
+- **`server.js`**: Configura y ejecuta el servidor Express.
+- **`lib/metacritic.js`**: Contiene funciones para obtener datos de la API de Metacritic.
 
-### Cómo Ejecutar el Proyecto
+## Cómo Ejecutar el Proyecto
 
-1. **Backend:**
-   - Navegar al directorio del servidor y ejecutar `node server.js` para iniciar el servidor Express.
+### Backend
 
-2. **Frontend:**
-   - Navegar al directorio del frontend y usar los comandos de Expo para iniciar la aplicación en Android, iOS o web:
-     - `expo start`
-     - `expo start --android`
-     - `expo start --ios`
-     - `expo start --web`
+1. Navega al directorio del servidor.
+2. Ejecuta `node server.js` para iniciar el servidor Express.
 
-### Contribuciones
+### Frontend
 
-Las contribuciones al proyecto son bienvenidas. Si deseas contribuir, por favor, abre un issue o envía un pull request con tus cambios.
+1. Navega al directorio del frontend.
+2. Utiliza los comandos de Expo para iniciar la aplicación en Android, iOS o web:
+   - `expo start` para iniciar la aplicación en modo de desarrollo.
+   - `expo start --android` para iniciar la aplicación en un dispositivo Android.
+   - `expo start --ios` para iniciar la aplicación en un dispositivo iOS.
+   - `expo start --web` para iniciar la aplicación en un navegador web.
 
----
+## Dependencias
+
+Este proyecto utiliza las siguientes dependencias:
+
+- **React Native:** Biblioteca principal para el desarrollo de la interfaz móvil.
+- **Expo:** Herramienta para el desarrollo y prueba de aplicaciones React Native.
+- **Express:** Framework para construir el servidor backend.
+- **CORS:** Middleware para gestionar permisos de origen cruzado.
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar un pull request. Asegúrate de seguir las mejores prácticas de codificación y de probar tus cambios antes de enviarlos.
+
 
 ## IMG
 
